@@ -48,11 +48,22 @@ Point const operator+(Point const &lhs, Point const &rhs) //
 
 - RAII
 
+### Syntax
+- [潮．C++20 | explicit 關鍵字大解析](https://medium.com/@tjsw/%E6%BD%AE-c-20-%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84-explicit-%E9%97%9C%E9%8D%B5%E5%AD%97%E5%A4%A7%E5%85%A8-bac7c7eaae3f)
+- [All declarations](https://en.cppreference.com/w/cpp/language/declarations)
+    - asm, inline, &, constexpr, ...
+```c++
+// A sample in the article, wtf
+int (*(*foo)(double))[3] = nullptr;
+```
+
 ### Compiler behaviour
 - Optimize
     - [什么时候应当依靠返回值优化（RVO）](https://www.zhihu.com/question/27000013)
 - Resource allocation
     - RAII
+
+
 
 
 ## Reading list
