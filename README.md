@@ -5,13 +5,7 @@
 
 - Initializations
 ```c++
-struct A
-{
-    A(int) { }      // converting constructor
-    A(int, int) { } // converting constructor (C++11)
-    operator bool() const { return true; }
-};
- 
+
 struct B
 {
     explicit B(int) { }
@@ -21,15 +15,7 @@ struct B
  
 int main()
 {
-    A a1 = 1;      // OK: copy-initialization selects A::A(int)
-    A a2(2);       // OK: direct-initialization selects A::A(int)
-    A a3 {4, 5};   // OK: direct-list-initialization selects A::A(int, int)
-    A a4 = {4, 5}; // OK: copy-list-initialization selects A::A(int, int)
-    A a5 = (A)1;   // OK: explicit cast performs static_cast
-    if (a1) ;      // OK: A::operator bool()
-    bool na1 = a1; // OK: copy-initialization selects A::operator bool()
-    bool na2 = static_cast<bool>(a1); // OK: static_cast performs direct-initialization
- 
+
 //  B b1 = 1;      // error: copy-initialization does not consider B::B(int)
     B b2(2);       // OK: direct-initialization selects B::B(int)
     B b3 {4, 5};   // OK: direct-list-initialization selects B::B(int, int)
@@ -43,7 +29,7 @@ int main()
 ```
 
 - Operator overloading
-    - Design of Operator + 
+    1. Design of Operator + 
 ``` c++
 // 先設計 += 再設計 +
 Point const operator+(Point const &lhs, Point const &rhs) // 
@@ -54,3 +40,8 @@ Point const operator+(Point const &lhs, Point const &rhs) //
 // [心得] operator+ 與 operator+= 的設計
 // https://www.ptt.cc/man/C_and_CPP/D8D2/DA94/DDBB/M.1127480887.A.E7F.html
 ```
+
+- Rvalue
+    - [\[C++\] rvalue reference 初入門](https://shininglionking.blogspot.com/2013/06/c-rvalue-reference.html)
+        - lvalue, rvalue, &&, use of std::move
+    - [What is move semantics?](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
