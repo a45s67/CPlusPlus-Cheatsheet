@@ -45,3 +45,11 @@ Point const operator+(Point const &lhs, Point const &rhs) //
     - [\[C++\] rvalue reference 初入門](https://shininglionking.blogspot.com/2013/06/c-rvalue-reference.html)
         - lvalue, rvalue, &&, use of std::move
     - [What is move semantics?](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
+
+
+
+### Reading list
+- Effective Modern C++
+- Clean Code: A Handbook of Agile Software Craftsmanship
+- \[Almost Done\]
+    - 程序員的自我修養:鍵結,裝載與庫
