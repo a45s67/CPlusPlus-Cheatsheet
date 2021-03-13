@@ -41,3 +41,16 @@ int main()
 }
 // reference : https://en.cppreference.com/w/cpp/language/explicit
 ```
+
+- Operator overloading
+    - Design of Operator + 
+``` c++
+// 先設計 += 再設計 +
+Point const operator+(Point const &lhs, Point const &rhs) // 
+{
+  return Point(lhs) += rhs; // 
+}
+
+// [心得] operator+ 與 operator+= 的設計
+// https://www.ptt.cc/man/C_and_CPP/D8D2/DA94/DDBB/M.1127480887.A.E7F.html
+```
