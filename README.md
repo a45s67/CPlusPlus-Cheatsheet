@@ -46,11 +46,12 @@ Point const operator+(Point const &lhs, Point const &rhs) //
         - lvalue, rvalue, &&, use of std::move
     - [What is move semantics?](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
 
+- RAII
 
 ### Compiler behaviour
-- optimize
+- Optimize
     - [什么时候应当依靠返回值优化（RVO）](https://www.zhihu.com/question/27000013)
-- Object
+- Resource allocation
     - RAII
 
 
