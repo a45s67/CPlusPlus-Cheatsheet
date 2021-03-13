@@ -39,5 +39,5 @@ int main()
 //  bool nb1 = b2; // error: copy-initialization does not consider B::operator bool()
     bool nb2 = static_cast<bool>(b2); // OK: static_cast performs direct-initialization
 }
-https://en.cppreference.com/w/cpp/language/explicit
+// reference : https://en.cppreference.com/w/cpp/language/explicit
 ```
