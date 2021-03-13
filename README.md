@@ -47,8 +47,14 @@ Point const operator+(Point const &lhs, Point const &rhs) //
     - [What is move semantics?](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
 
 
+### Compiler behaviour
+- optimize
+    - [什么时候应当依靠返回值优化（RVO）](https://www.zhihu.com/question/27000013)
+- Object
+    - RAII
 
-### Reading list
+
+## Reading list
 - Effective Modern C++
 - Clean Code: A Handbook of Agile Software Craftsmanship
 - \[Almost Done\]
