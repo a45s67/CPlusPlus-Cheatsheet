@@ -1,6 +1,28 @@
 # CPlusPlus-Cheatsheet
 
 
+### Tricks
+- Generate string repetition of given length. [so](https://stackoverflow.com/questions/12483406/create-string-with-specified-number-of-characters)
+```c++
+// repeat one char
+std::string s(5, 'a'); // s == "aaaaa"
+
+// repeat string
+#include <algorithm>
+
+std::string pattern("Xeo ");
+auto pattern_it = pattern.begin();
+std::string s(256, '\0');
+std::generate(s.begin(), s.end(),
+    [&]() -> char { 
+      if(pattern_it == pattern.end())
+        pattern_it = pattern.begin();
+      return *pattern_it++; // return current value and increment
+    });
+
+```
+
+
 ### Class
 
 - Initializations
